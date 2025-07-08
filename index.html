@@ -41,56 +41,20 @@
       color: white;
       font-weight: bold;
     }
-    .biru {
-      background-color: #0000FF !important; /* Merah muda */
-      color: white;
-      font-weight: bold;
-    }
-    .filter-button {
-      margin: 10px;
-      padding: 10px;
-      cursor: pointer;
-      border: none;
-      color: white;
-      font-weight: bold;
-    }
-    .filter-hijau {
-      background-color: #81c784;
-    }
-    .filter-kuning {
-      background-color: #fff176;
-    }
-    .filter-merah {
-      background-color: #ffb3b3;
-    }
-    .filter-biru {
-      background-color: #0000FF;
-    }
-    .filter-all {
-      background-color: #444;
-    }
   </style>
 </head>
 <body>
 
-  <h2>Filter Data (click pada warna di bawah untuk sortir warna)</h2>
-  <button class="filter-button filter-all" onclick="filterData('all')">Tampilkan Semua</button>
-  <button class="filter-button filter-hijau" onclick="filterData('hijau')">Hijau</button>
-  <button class="filter-button filter-kuning" onclick="filterData('kuning')">Kuning</button>
-  <button class="filter-button filter-merah" onclick="filterData('merah')">Merah</button>
-  <button class="filter-button filter-biru" onclick="filterData('biru')">Biru</button>
-
   <h2>Keterangan Warna</h2>
   <ul>
     <li><span class="hijau">Hijau</span> : Aman</li>
-    <li><span class="kuning">Kuning</span> : PC Generasi Menengah. (Generasi tidak jauh dari yang warna merah, tidak prioritas. Tetapi, baik nya di ganti / Upgrade SSD dan Ram). <strong> Total PC 18. </strong></li>
-    <li><span class="merah">Merah</span> : PC Generasi Lama (Wajib diganti). <strong> Total PC 10, AIO 19. </strong></li>
-    <li><span class="biru">Biru</span> : Tidak Dapat Komputer. <strong> Total 18. </strong></li>
+    <li><span class="kuning">Kuning</span> : PC Generasi Menengah. (Generasi tidak jauh dari yang warna merah, tidak prioritas. Tetapi, baik nya di ganti / Upgrade SSD dan Ram)</li>
+    <li><span class="merah">Merah</span> : PC Generasi Lama (Wajib diganti)</li>
   </ul>
 
   <h2>✔️ / ❌</h2>
   <ul>
-    <li><span class="">✔️ sudah di cek</span> : Ruangan Staff.</li>
+    <li><span class="">✔️ sudah di cek</span> : Ruangan Staff</li>
     <li><span class="">❌ belum di cek</span> : Ruang Kabadan, Ruang Sesban dan Ruangan lainya.</li>
   </ul>
 
@@ -215,7 +179,7 @@
   </tr>
   </table>
 
-  <h3>Staff Umum</h3>
+<h3>Staff Umum</h3>
 
 <table>
   <tr>
@@ -282,14 +246,14 @@
     <td class="merah">4 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 10 Professional (x64) Build 19045.5737 (22H2)</td>
   </tr>
-  <tr class="merah">
+  <tr class="kuning">
     <td>007</td>
     <td>Mangatas</td>
     <td>PC Mati</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Intel Core i3-6100</td>
+    <td class="merah">Seagate ST500DM002-1BD142 (500 GB) 7200 RPM</td>
+    <td class="merah">4 GBytes DDR4 SDRAM</td>
+    <td>Microsoft Windows 7 Professional (x64) Build 7601</td>
   </tr>
   <tr class="merah">
     <td>008</td>
@@ -372,7 +336,7 @@
     <td class="hijau">8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 10 Professional (x64) Build 19045.5854 (22H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>017</td>
     <td>Agnes</td>
     <td>Tidak ada Komputer</td>
@@ -435,7 +399,7 @@
     <td class="hijau">8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 10 Professional (x64) Build 19045.5198 (22H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>024</td>
     <td>Nia</td>
     <td>Tidak ada Komputer</td>
@@ -471,7 +435,7 @@
     <td class="hijau">8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 10 Professional (x64) Build 19045.5737 (22H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>028</td>
     <td>Tenta</td>
     <td>Tidak ada Komputer</td>
@@ -765,7 +729,7 @@
     <td class="merah">4 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 7 Professional (x64) Build 7601</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>007</td>
     <td>Bella</td>
     <td>Tidak ada Komputer</td>
@@ -792,7 +756,7 @@
     <td>2 GBytes DDR3 SDRAM</td>
     <td>Microsoft Windows 7 Ultimate Build 7601</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>010</td>
     <td>Gama</td>
     <td>Tidak ada Komputer</td>
@@ -855,7 +819,7 @@
     <td class="hijau">8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 10 Professional N (x64) Build 19045.3324 (22H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>017</td>
     <td>Nurhasanah</td>
     <td>Tidak ada Komputer</td>
@@ -864,7 +828,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>018</td>
     <td>Yessy</td>
     <td>Tidak ada Komputer</td>
@@ -873,7 +837,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>019</td>
     <td>Yoga</td>
     <td>Tidak ada Komputer</td>
@@ -918,7 +882,7 @@
     <td>8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 11 Professional (x64) Build 26100.4061 (24H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>024</td>
     <td>Galih</td>
     <td>Tidak ada Komputer</td>
@@ -984,7 +948,7 @@
     <td>8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 11 Home Single Language (x64) Build 26100.3775 (24H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>003</td>
     <td>Yogi</td>
     <td>Tidak ada Komputer</td>
@@ -1130,7 +1094,7 @@
     <td class="merah">4 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 8.1 Professional (x64) Build 9600</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>012</td>
     <td>Diyan</td>
     <td>Tidak ada Komputer</td>
@@ -1139,7 +1103,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>013</td>
     <td>Erlangga</td>
     <td>Tidak ada Komputer</td>
@@ -1148,7 +1112,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>014</td>
     <td>Eka</td>
     <td>Tidak ada Komputer</td>
@@ -1238,7 +1202,7 @@
     <td class="merah">4 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 7 Professional (x64) Build 7601</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>024</td>
     <td>Erik</td>
     <td>Tidak ada Komputer</td>
@@ -1299,10 +1263,10 @@
     <td>002</td>
     <td>Iman</td>
     <td>PC</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Intel Core i3-6100</td>
+    <td class="merah">Seagate ST500DM002-1BD142 (500 GB) 7200 RPM</td>
+    <td class="merah">4 GBytes DDR4 SDRAM</td>
+    <td>Microsoft Windows 7 Professional (x64) Build 7601</td>
   </tr>
   <tr class="hijau">
     <td>003</td>
@@ -1405,7 +1369,7 @@
     <td>8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 11 Professional (x64) Build 26100.3775 (24H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>007</td>
     <td>Mita</td>
     <td>Tidak ada Komputer</td>
@@ -1504,7 +1468,7 @@
     <td>6 GBytes DDR3 SDRAM</td>
     <td>Microsoft Windows 7 Professional Build 7601</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>018</td>
     <td>Kevin</td>
     <td>Tidak ada Komputer</td>
@@ -1522,7 +1486,7 @@
     <td>8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 11 Professional (x64) Build 22631.4890 (23H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>020</td>
     <td>Ilman</td>
     <td>Tidak ada Komputer</td>
@@ -1567,7 +1531,7 @@
     <td>8 GBytes DDR4 SDRAM</td>
     <td>Microsoft Windows 11 Home Single Language (x64) Build 22631.5335 (23H2)</td>
   </tr>
-  <tr class="biru">
+  <tr>
     <td>025</td>
     <td>Iqbal</td>
     <td>Tidak ada Komputer</td>
@@ -1577,23 +1541,6 @@
     <td></td>
   </tr>
 </table>
-
-  <script>
-    function filterData(color) {
-      const rows = document.querySelectorAll('table tr');
-      rows.forEach(row => {
-        if (color === 'all') {
-          row.style.display = '';
-        } else {
-          if (row.classList.contains(color)) {
-            row.style.display = '';
-          } else {
-            row.style.display = 'none';
-          }
-        }
-      });
-    }
-  </script>
 
 </body>
 </html>
