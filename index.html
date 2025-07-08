@@ -1578,5 +1578,22 @@
   </tr>
 </table>
 
+  <script>
+    function filterData(color) {
+      const rows = document.querySelectorAll('table tr');
+      rows.forEach(row => {
+        if (color === 'all') {
+          row.style.display = '';
+        } else {
+          if (row.classList.contains(color)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
