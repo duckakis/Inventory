@@ -41,20 +41,56 @@
       color: white;
       font-weight: bold;
     }
+    .biru {
+      background-color: #0000FF !important; /* Merah muda */
+      color: white;
+      font-weight: bold;
+    }
+    .filter-button {
+      margin: 10px;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+    .filter-hijau {
+      background-color: #81c784;
+    }
+    .filter-kuning {
+      background-color: #fff176;
+    }
+    .filter-merah {
+      background-color: #ffb3b3;
+    }
+    .filter-biru {
+      background-color: #0000FF;
+    }
+    .filter-all {
+      background-color: #444;
+    }
   </style>
 </head>
 <body>
 
+  <h2>Filter Data (click pada warna di bawah untuk sortir warna)</h2>
+  <button class="filter-button filter-all" onclick="filterData('all')">Tampilkan Semua</button>
+  <button class="filter-button filter-hijau" onclick="filterData('hijau')">Hijau</button>
+  <button class="filter-button filter-kuning" onclick="filterData('kuning')">Kuning</button>
+  <button class="filter-button filter-merah" onclick="filterData('merah')">Merah</button>
+  <button class="filter-button filter-biru" onclick="filterData('biru')">Biru</button>
+
   <h2>Keterangan Warna</h2>
   <ul>
     <li><span class="hijau">Hijau</span> : Aman</li>
-    <li><span class="kuning">Kuning</span> : PC Generasi Menengah. (Generasi tidak jauh dari yang warna merah, tidak prioritas. Tetapi, baik nya di ganti / Upgrade SSD dan Ram)</li>
-    <li><span class="merah">Merah</span> : PC Generasi Lama (Wajib diganti)</li>
+    <li><span class="kuning">Kuning</span> : PC Generasi Menengah. (Generasi tidak jauh dari yang warna merah, tidak prioritas. Tetapi, baik nya di ganti / Upgrade SSD dan Ram). <strong> Total PC 18. </strong></li>
+    <li><span class="merah">Merah</span> : PC Generasi Lama (Wajib diganti). <strong> Total PC 10, AIO 19. </strong></li>
+    <li><span class="biru">Biru</span> : Tidak Dapat Komputer. <strong> Total 18. </strong></li>
   </ul>
 
   <h2>✔️ / ❌</h2>
   <ul>
-    <li><span class="">✔️ sudah di cek</span> : Ruangan Staff</li>
+    <li><span class="">✔️ sudah di cek</span> : Ruangan Staff.</li>
     <li><span class="">❌ belum di cek</span> : Ruang Kabadan, Ruang Sesban dan Ruangan lainya.</li>
   </ul>
 
